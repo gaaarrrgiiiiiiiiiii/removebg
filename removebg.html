@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remove.bg</title>
+  <link rel="stylesheet" href="removebg.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="top">
+    <img src="removebg.png">
+   
+    <p class="p">remove</p>
+    <p class="p5">bg </p>
+    <p class="p1">Remove Background</p>
+    <p class="p2">How to Use </p>
+    <p class="p3">Tools & API</p>
+    <p class="p4">Pricing</p>
+    <p class="p6">Log in</p>
+    <button class="b">Sign up</button>
+  </div>
+  <video width="400" height="300" autoplay playsinline="true" class="v">
+    <source src="manuel_compressed.mp4" type="video/mp4">  
+  </video>
+  <div class="d">
+    <div class="div">
+      
+      <button class="b1" id="upload" onclick="clickMe(); hideButton(); popButton(); popSta()" >Upload Image</button> 
+      <input type="file" id="click" accept="image/*"> 
+      <!-- <label for="upload" class="upload-button"></label> -->
+      <button class="magicbrush" id="mg" onclick="editImage()"  hidden>Edit</button>
+      <button class="download"> Download</button>
+      <button id="brushTool" hidden>Brush</button>
+      <button id="brushSizeRange" hidden>Brush Size</button>
+
+      
+      
+    </div>
+    
+    
+  </div>
+  
+  <p class="p7">Remove Image</p>
+  <p class="p8">Background</p>
+  <p class="p9"> 100% Automatically and</p>
+  <div class="image-container">
+    <img src="remove.png" class="image">
+    <div class="overlay">Free</div>
+  </div>
+  <div id="result"></div>
+
+
+  <canvas id="canvas" ></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js">
+    </script>
+
+  <script src="removebg.js" >
+
+  </script>
+  
+  
+
+</body>
+</html>
